@@ -1,0 +1,72 @@
+$primary: #90ee90;
+$footerclr: rgb(206, 206, 206);
+
+$breakpoint-lg: 48rem;
+$breakpoint-md: $breakpoint-lg / 2;
+$breakpoint-sm: $breakpoint-lg / 4;
+
+$font-family: 'Comic Sans', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.navbar {
+    min-height: 3rem;
+    background-color: $primary;
+    font-size: 1.6rem;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 24rem) {
+    .navbar-inner, .nav {
+        flex-direction: column;
+    }
+}
+
+.nav-item {
+    padding-left: 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+@import "utilities/container";
+
+@import "components/card";
+
+@import "components/cta";
+
+@import "components/footer";
+
+@import "components/nav";
